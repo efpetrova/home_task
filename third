@@ -1,0 +1,82 @@
+def zodiac_sign(p_day, p_month):
+    p_day =int(p_day)
+    p_month =str(p_month)
+    if p_month=="Август":
+        if p_day>21:
+           sign='Дева'
+        else:
+           sign='Лев'
+
+    if p_month == "Сентябрь":
+        if p_day>22:
+            sign = 'Весы'
+        else:
+            sign = 'Лев'
+
+    if p_month == "Октябрь":
+        if p_day > 23:
+           sign = 'Весы'
+        else:
+           sign = 'Скорпион'
+
+    if p_month == "Ноябрь":
+        if p_day > 22:
+           sign = 'Стрелец'
+        else:
+           sign = 'Скорпион'
+
+    if p_month == "Декабрь":
+        if p_day >=22:
+           sign = 'Козерог'
+        else:
+           sign = 'Стрелец'
+
+    if p_month == "Январь":
+        if p_day > 20:
+           sign = 'Водолей'
+        else:
+           sign = 'Козерог'
+
+    if p_month == "Февраль":
+        if p_day > 19:
+           sign = 'Рыбы'
+        else:
+           sign = 'Водолей'
+
+    if p_month == "Март":
+        if p_day > 20:
+           sign = 'Овен'
+        else:
+           sign = 'Рыбы'
+
+    if p_month == "Апрель":
+        if p_day > 20:
+            sign = 'Телец'
+        else:
+            sign = 'Овен'
+
+    if p_month == "Май":
+        if p_day > 20:
+            sign = 'Близнецы'
+        else:
+            sign = 'Телец'
+
+    if p_month == "Июнь":
+        if p_day > 20:
+            sign = 'Рак'
+        else:
+            sign = 'Близнецы'
+
+    if p_month == "Июль":
+        if p_day > 21:
+            sign = 'Лев'
+        else:
+            sign = 'Рак'
+    return sign
+
+
+if __name__ == "__main__":
+  day = input("Введите день")
+  month =input("Введите месяц")
+  print("Ваш знак зодиака")
+  print(zodiac_sign(day,month))
