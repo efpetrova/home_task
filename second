@@ -1,0 +1,15 @@
+def compare_str(str_fst, str_snd):
+    if len(str_fst) > len(str_snd):
+        return 'Фраза 1 длиннее фразы 2'
+    elif len(str_fst) == len(str_snd):
+        return 'Фразы равной длины'
+    else:
+        return 'Фраза 2 длиннее фразы 1'
+
+if __name__ == "__main__":
+    phrase_1 = 'Насколько проще было бы писать программы, если бы не заказчики'
+    phrase_2 = '640Кб должно хватить для любых задач. Билл Гейтс (по легенде)'
+    print(phrase_1)
+    print(phrase_2)
+    print('Результат:')
+    print(compare_str(phrase_1, phrase_2))
