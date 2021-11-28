@@ -10,3 +10,13 @@ if __name__ == "__main__":
     word_2 ='testing'
     print(even_check(word))
     print(even_check(word_2))
+
+
+
+ arr = []
+    while 1==1:
+        x = int(input("Введите число:"))
+        arr.append(x)
+        if x is 0:
+            print(sum(arr))
+            break
