@@ -1,0 +1,12 @@
+def even_check(word):
+    i = len(word)
+    if i%2==0:
+        return word[(i//2)-1]+word[(i//2)]
+    else:
+        return word[(i//2)]
+
+if __name__ == "__main__":
+    word = 'test'
+    word_2 ='testing'
+    print(even_check(word))
+    print(even_check(word_2))
