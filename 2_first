@@ -1,3 +1,4 @@
+#не проверять! это второй блок заданий
 def even_check(word):
     i = len(word)
     if i%2==0:
