@@ -1,0 +1,4 @@
+    arr=[]
+    arr= [[row[0],round(sum((x-32)*0.5555555555555556 for x in row[1])/len(row[1]),1)] for row in countries_temperature]
+    print(arr)
+    
